@@ -1,0 +1,35 @@
+package top.ctynt.io.geek;
+
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * @Author ctynt
+ * @Date 2023/3/28
+ * @Description FileDemo2
+ */
+
+public class FileDemo2 {
+    public static void main(String[] args) throws IOException {
+        // 传入目录相对路径
+        File imageDir = new File(".\\images");
+        File geekDir = new File("..\\geek");
+        // 传入文件相对路径
+        File file = new File(".\\Hello.java");
+
+        System.out.println("-- imagesDir ---");
+        System.out.println(geekDir.getPath());
+        System.out.println(geekDir.getAbsolutePath());
+        System.out.println(geekDir.getCanonicalPath());
+
+        System.out.println("-- geekDir ---");
+        System.out.println(geekDir.getPath());
+        System.out.println(geekDir.getAbsolutePath());
+        System.out.println(geekDir.getCanonicalPath());
+
+        System.out.println("-- file ---");
+        System.out.println(file.getPath());
+        System.out.println(file.getAbsolutePath());
+        System.out.println(file.getCanonicalPath());
+    }
+}
